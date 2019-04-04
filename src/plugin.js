@@ -10,12 +10,15 @@ module.exports = class ICU {
     this.opts = Object.assign(opts, {
       focusWork: false,
       type: 'normal',
-      message: ''
+      message: '',
+      holiday: false
     })
   }
 
   apply(compiler) {
-    const { focusWork, type, message } = this.opts
+    const {
+      focusWork, type, message, holiday
+    } = this.opts
 
     compiler.hooks.entryOption.tap('webpack-plugin-996icu', () => {
       if (focusWork) return
@@ -24,7 +27,7 @@ module.exports = class ICU {
       const day = (new Date()).getDay()
       const hour = (new Date()).getHours()
 
-      if (day > 4) {
+      if (day > 4 || holiday) {
         msg = message || (type === 'webpack' ? WEBPACK_ERROR : `${HOLIDAY_ERROR}\n${SLOGAN}`)
       } else if (hour >= 18) {
         msg = message || (type === 'webpack' ? WEBPACK_ERROR : `${NIGHT_ERROR}\n${SLOGAN}`)
