@@ -9,5 +9,13 @@ npm i webpack-plugin-996icu
 ```
 
 ```js
+// webpack.config.js
+const WebpackPlugin996ICU = require('webpack-plugin-996icu')
 
+const config = {
+  // other config options
+  plugins: [
+    new WebpackPlugin996ICU()
+  ]
+}
 ```
