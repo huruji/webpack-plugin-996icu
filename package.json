@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/huruji/webpack-plugin-996icu/issues"
   },
-  "homepage": "https://github.com/huruji/webpack-plugin-996icu#readme"
+  "homepage": "https://github.com/huruji/webpack-plugin-996icu#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
 }
