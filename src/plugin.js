@@ -7,7 +7,7 @@ const WEBPACK_ERROR = 'Some errors with webpack, our team is fixing now, please 
 const SLOGAN = '工作996，生病ICU。加班不规范，亲人两行泪。'
 module.exports = class ICU {
   constructor(opts) {
-    this.opts = Object.assign(opts, {
+    this.opts = Object.assign(opts || {}, {
       focusWork: false,
       type: 'normal',
       message: '',
@@ -36,7 +36,7 @@ module.exports = class ICU {
       }
 
       if (msg) {
-        chalk.red(msg)
+        console.log(chalk.red(msg))
         process.exit()
       }
     })
