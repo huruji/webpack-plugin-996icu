@@ -1,6 +1,6 @@
 {
-  "name": "webpack-plugin-996icu",
-  "version": "1.0.0",
+  "name": "webpack-plugin-nns-icu",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
