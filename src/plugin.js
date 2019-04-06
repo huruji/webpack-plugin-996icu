@@ -7,19 +7,18 @@ const WEBPACK_ERROR = 'Some errors with webpack, our team is fixing now, please 
 const SLOGAN = '工作996，生病ICU。加班不规范，亲人两行泪。'
 module.exports = class ICU {
   constructor(opts) {
-    this.opts = Object.assign(opts || {}, {
+    this.opts = Object.assign({
       focusWork: false,
       type: 'normal',
       message: '',
       holiday: false
-    })
+    }, opts || {})
   }
 
   apply(compiler) {
     const {
       focusWork, type, message, holiday
     } = this.opts
-
     compiler.hooks.entryOption.tap('webpack-plugin-996icu', () => {
       if (focusWork) return
 
