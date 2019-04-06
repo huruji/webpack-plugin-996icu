@@ -2,6 +2,8 @@
 <img src="./logo.png" width="500"/>
 <p>
 
+
+![](./screenshot.png)
 一个帮助前端开发者，拒绝 996，提高工作效率的 webpack 插件
 
 
