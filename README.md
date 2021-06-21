@@ -42,7 +42,7 @@ default: `false`
 ### type
 type: `normal` | `webpack`
 
-设置为 `webpack` 时，输入的报错信息会假装是 `webpack` 除了问题，报错内容如下：
+设置为 `webpack` 时，输入的报错信息会假装是 `webpack` 出了问题，报错内容如下：
 
 ![](./webpackErr.png)
 
