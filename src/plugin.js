@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const HOLIDAY_ERROR = 'webpack 拒绝在 周末 加班编译打包'
 const MORNING_ERROR = 'webpack 拒绝在每天 9:00 之前加班编译打包'
 const NIGHT_ERROR = 'webpack 拒绝在每天 18:00 之后加班编译打包'
-const WEBPACK_ERROR = 'Some errors with webpack, our team is fixing now, please waiting'
+const WEBPACK_ERROR = 'Some errors with webpack, our team is fixing now, please wait patiently.'
 const SLOGAN = '工作996，生病ICU。加班不规范，亲人两行泪。'
 module.exports = class ICU {
   constructor(opts) {
